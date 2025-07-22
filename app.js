@@ -44,7 +44,7 @@ app.engine('ejs',ejsMate);  // ye boiler plate k loiye inport kiya h
 app.use(express.static(path.join(__dirname,"/public"))); //yaha css k liye ye bulaya h
 
 
-const store=MongoStore.creat({
+const store=MongoStore.create({
   mongoUrl:dburl,
   crypto:{
     secret:process.env.SECRET,
